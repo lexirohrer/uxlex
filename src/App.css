@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+/* MOBILE */
+html{
+  font-size:14px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* TABLET */
+@media only screen and (min-width: 480px) {
+  html{
+      font-size:16px;
+  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  html{
+      font-size:18px;
+  }
+}
+/* X-LARGE */
+@media only screen and (min-width: 1024px) {
+  html{
+      font-size:20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.header{
+  width: 100vw;
+  height: 1.5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding:.5rem;
+  background:rgba(255, 255, 255, 0.8);
+  font-size: 1rem;  
+  font-weight: bold;
+  z-index:1;
+  position: absolute;
+  top: 0px;
+  border-bottom: .1rem solid white;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation{
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project {
+width: 150vh;
+height: 15rem;
+background: white;
+border-radius: 30px;
+z-index: 1;
+display: flex;
+justify-content:flex-start;
+}
+
+img {
+    /* max-height: 100%;
+    width: auto; */
+    width:100%; 
+    height:100%; 
+    object-fit:contain;
+}
+
+.project-text{
+  width: 75vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+
+}
+.container {
+	background: #EBEDED;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+  position: relative;
+  z-index: -5;
+  
+}
+
+.shape-blob {
+	background:linear-gradient(to right, #B4BEBD, #236F71);
+	height: 200px;
+	width: 200px;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_one 40s ease-in-out infinite both;
+	opacity:.7;
+	position: absolute;
+	left: 70%;
+	top: 50%;
+}
+.shape-blob.one{
+	height: 500px;
+	width: 500px;
+	left: -200px;
+	top: -150px;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+}
+
+.shape-blob.two{
+	height: 350px;
+	width: 350px;
+	left: 500px;
+	top: -150px;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
+}
+
+h1 {
+	font-family: 'Poppins';
+	font-size: 1.5em;
+	color: #236F71;
+  /* position: relative; */
+	/* z-index: 4;
+	text-shadow: 2px 3px 15px rgba(0,0,0,.15); */
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #828282;
+  display: inline;
+  padding: 10px;
+  /* position: relative; */
 }
