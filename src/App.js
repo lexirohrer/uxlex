@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import Hello from './pages/hello';
 
 function App() {
   return ( <BrowserRouter>
@@ -14,9 +15,9 @@ function App() {
         </div>
         
         <div className="navigation">
-          <Link to='hello'><h2> hello 👋</h2></Link>
-          <Link to='/'><h2>projects📱</h2></Link>
-          <Link to='resume'><h2>resume 🤓</h2></Link>
+          <Link to='/hello'>hello 👋</Link>
+          <Link to='/'>projects📱</Link>
+          <Link to='/resume'>resume 🤓</Link>
           {/* put each h2 within a Link after installing react router */}
           {/* use a / in the projects one since it's a landing page */}
         </div>
@@ -25,18 +26,16 @@ function App() {
         {/* put switch tag here as we did in class with different routes */}
         <Switch>
         <Route path="/hello">
-          <Hello /> 
-          {/*  create new file and return the html from it above*/}
+          <Hello />
         </Route>
-        <Route path="/" exact>
-          <Projects />
+        <Route exact path="/">
+          <projects />
+          {/* make this uppercase */}
         </Route>
         {/* <Route path="/resume" exact>
           <Resume />
         </Route> */}
       </Switch>
-
-    </BrowserRouter>
 
       <div class ="project">
         <img src="intuit-header.jpg" alt=''></img>
@@ -56,6 +55,7 @@ function App() {
       </div>
 
     </div>
+    </BrowserRouter>
   );
 }
 

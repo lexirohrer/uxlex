@@ -38,10 +38,14 @@ body {
   font-size: 1rem;  
   font-weight: bold;
   z-index:1;
-  position: absolute;
+  position: fixed;
   top: 0px;
   border-bottom: .1rem solid white;
-}
+  }
+
+  .navigation a {
+    /* //style with h2 styling */
+  }
 
 .nav-title {
   display: flex;
@@ -61,9 +65,12 @@ width: 150vh;
 height: 15rem;
 background: white;
 border-radius: 30px;
+box-shadow: 15px 30px 25px rgb(130,130,130,0.3);
 z-index: 1;
 display: flex;
-justify-content:flex-start;
+flex-direction: row;
+justify-content: space-evenly;
+
 }
 
 img {
@@ -72,14 +79,19 @@ img {
     width:100%; 
     height:100%; 
     object-fit:contain;
+    justify-content: flex-start;
+    /* position: relative;
+    right: 400px; */
 }
 
 .project-text{
-  width: 75vh;
-  height: auto;
+  /* width: 75vh; */
+  /* height: auto; */
   display: flex;
-  align-items: center;
-  overflow-wrap: break-word;
+  flex-direction: column;
+  /* overflow: hidden; */
+  justify-content: flex-start;
+  /* overflow-wrap: break-word; */
 
 }
 .container {
@@ -91,8 +103,7 @@ img {
 	justify-content: center;
 	overflow: hidden;
   position: relative;
-  z-index: -5;
-  
+  z-index: -5;  
 }
 
 .shape-blob {
