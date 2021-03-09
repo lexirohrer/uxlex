@@ -10,8 +10,8 @@ function App() {
       
       <header className="header">
         <div className="nav-title">
-          <h1>Lexi Rohrer </h1>
-          <h2> | product design portfolio</h2> 
+          <p class="title">Lexi Rohrer </p>
+          <p class="subtitle"> | product design portfolio</p> 
         </div>
         
         <div className="navigation">
@@ -32,7 +32,7 @@ function App() {
           <projects />
           {/* make this uppercase */}
         </Route>
-        {/* <Route path="/resume" exact>
+        {/* <Route path="/resume">
           <Resume />
         </Route> */}
       </Switch>

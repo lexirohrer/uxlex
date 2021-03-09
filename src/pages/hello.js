@@ -1,4 +1,5 @@
 import React from "react";
+import './hello.css';
 import { Link } from "react-router-dom";
 
 function Hello() {
