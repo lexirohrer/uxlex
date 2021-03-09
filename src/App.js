@@ -2,6 +2,7 @@
 import './App.css';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Hello from './pages/hello';
+import Projects from './pages/projects';
 
 function App() {
   return ( <BrowserRouter>
@@ -16,7 +17,7 @@ function App() {
         
         <div className="navigation">
           <Link to='/hello'>hello 👋</Link>
-          <Link to='/'>projects📱</Link>
+          <Link to='/projects'>projects📱</Link>
           <Link to='/resume'>resume 🤓</Link>
           {/* put each h2 within a Link after installing react router */}
           {/* use a / in the projects one since it's a landing page */}
@@ -28,8 +29,8 @@ function App() {
         <Route path="/hello">
           <Hello />
         </Route>
-        <Route exact path="/">
-          <projects />
+        <Route exact path="/projects">
+          <Projects />
           {/* make this uppercase */}
         </Route>
         {/* <Route path="/resume">
@@ -37,7 +38,7 @@ function App() {
         </Route> */}
       </Switch>
 
-      <div class ="project">
+      {/* <div class ="project">
         <img src="intuit-header.jpg" alt=''></img>
         <div class="project-text">
           <h2>internship | 15 minute read</h2>
@@ -47,7 +48,7 @@ function App() {
             <li>Championed mobile first design in cross functional conversations and weekly critiques</li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div class="shape-blob"></div>
       <div class="shape-blob one"></div>
