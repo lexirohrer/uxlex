@@ -3,11 +3,6 @@ html{
     font-size:14px;
   }
 
-  .project {
-    display: flex;
-    flex-direction: column;
-  }
-
   .
   /* TABLET */
   @media only screen and (min-width: 480px) {
@@ -30,6 +25,10 @@ html{
   
   @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
   
+  .project-page{
+    display: flex;
+    flex-direction: column;
+  }
 
 .project {
     width: 150vh;
@@ -44,6 +43,14 @@ html{
     align-items: center;
     margin: 2rem;
     }
+
+    @media only screen and (max-width: 768px) {
+        .project {
+          flex-direction: column;
+          padding: 10px;
+          margin: 1rem;
+        }
+      }
     
     h1 {
       font-family: 'Poppins';

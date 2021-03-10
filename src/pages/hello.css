@@ -1,4 +1,9 @@
 
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
 z-index: 1;
 }

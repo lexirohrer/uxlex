@@ -17,7 +17,7 @@ function App() {
         </div>
         
         <div className="navigation">
-          <Link to='/hello'>hello 👋</Link>
+          <Link to='/hello'>hello👋</Link>
           <Link to='/'>projects📱</Link>
           <Link to='/resume'>resume 🤓</Link>
           {/* put each h2 within a Link after installing react router */}
@@ -38,18 +38,7 @@ function App() {
         </Route>
       </Switch>
 
-      {/* <div class ="project">
-        <img src="intuit-header.jpg" alt=''></img>
-        <div class="project-text">
-          <h2>internship | 15 minute read</h2>
-          <h1>Quickbooks mobile web redesign</h1>
-          <ul>
-            <li>Redesigned three areas of QuickBooks mobile web, increasing trial-to-sub conversion 3 percentage points and mobile web signup to retention 5.7 percentage points</li>
-            <li>Championed mobile first design in cross functional conversations and weekly critiques</li>
-          </ul>
-        </div>
-      </div> */}
-
+    
       <div class="shape-blob"></div>
       <div class="shape-blob one"></div>
       <div class="shape-blob two"></div>

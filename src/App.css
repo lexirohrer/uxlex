@@ -2,6 +2,11 @@
 html{
   font-size:14px;
 }
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
 /* TABLET */
 @media only screen and (min-width: 480px) {
   html{
@@ -29,10 +34,10 @@ body {
 }
 .header{
   width: 100vw;
-  height: 1.5rem;
+  height: auto;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   padding:.5rem;
   background:rgba(255, 255, 255, 0.8);
   font-size: 1rem;  
@@ -43,32 +48,6 @@ body {
   border-bottom: .1rem solid white;
   }
 
-  .title {
-    font-family: 'Poppins';
-    font-size: 1.5em;
-    color: #236F71;
-    margin-left: 1rem;
-  }
-  
-  .subtitle {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 1rem;
-    color: #828282;
-    display: inline;
-    padding: 10px;
-    /* position: relative; */
-  }
-  .navigation a {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 1rem;
-    color: #828282;
-    display: inline;
-    padding: 10px;
-    text-decoration: none;
-  }
-
 .nav-title {
   display: flex;
   flex-direction: row;
@@ -76,20 +55,56 @@ body {
   align-items: center;
 }
 
-.navigation{
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
+@media only screen and (max-width: 768px) {
+  
+  .nav-title{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
+.title {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  color: #236F71;
+  margin:0px;
+  margin-left: 1rem;
+}
+
+.subtitle {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #828282;
+  display: inline;
+  margin:0px;
+  padding: 10px;
+  /* position: relative; */
+}
+.navigation{
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+.navigation a {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #828282;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: 236F71;
+}
 .container {
 	background: #EBEDED;
-	min-height: 100vh;
+  min-height: 100vh;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	overflow: hidden;
   position: relative;
   /* z-index: -5;   */
 }
