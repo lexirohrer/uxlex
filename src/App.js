@@ -37,7 +37,6 @@ function App() {
           <Resume />
         </Route>
       </Switch>
-
     
       <div class="shape-blob"></div>
       <div class="shape-blob one"></div>

@@ -1,8 +1,16 @@
 
-.intro{
+.hello{
+    position: absolute;
+    top: 5rem;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
+
+/* .intro{
+    display: flex;
+    flex-direction: column;
+} */
 
 h1 {
 z-index: 1;
