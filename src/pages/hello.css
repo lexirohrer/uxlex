@@ -1,7 +1,5 @@
 
 .hello{
-    position: absolute;
-    top: 5rem;
     display: flex;
     flex-direction: column;
     z-index: 1;

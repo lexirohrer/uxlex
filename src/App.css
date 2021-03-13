@@ -43,10 +43,51 @@ body {
   font-size: 1rem;  
   font-weight: bold;
   z-index:2;
-  position: fixed;
+  /* position: fixed; */
   top: 0px;
   border-bottom: .5rem solid white;
   }
+
+.burger{
+  display:none;
+}
+
+/* make burger appear at lower screen sizes */
+@media only screen and (max-width: 768px) {
+  .burger{
+    display:none;
+  }
+}
+  .RightNav{
+    flex-flow: column nowrap;
+    background-color: #0D2538;
+    position: fixed;
+    /* transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'}; */
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding-top: 3.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.menu {
+  position: absolute;
+  right:0;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px; 
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 
 .nav-title {
   display: flex;
@@ -102,8 +143,8 @@ body {
 	background: #EBEDED;
   height: auto;
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
   position: relative;
   /* z-index: -5;   */

@@ -28,8 +28,20 @@ function Projects(){
                         <h2>class project | 15 minute read</h2>
                         <h1>harvest app design</h1>
                         <ul>
-                            <li>worked with a four person design team over ten weeks to conduct research for and design an app for farmers market frequenters </li>
-                            <li>explored each step of the user centered design process, culminating in a high fidelity prototype</li>
+                            <li>Worked with a four person design team over ten weeks to conduct research for and design an app for farmers market frequenters </li>
+                            <li>Explored each step of the user centered design process, culminating in a high fidelity prototype</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class ="project">
+                    <img src="wta-header.png" alt=''></img>
+                    <div class="project-text">
+                        <h2>class project | 10 minute read</h2>
+                        <h1>WTA rebrand and app design</h1>
+                        <ul>
+                            <li>Conducted an audit of the Washington Trails Association brand, website, and app</li>
+                            <li>Redesigned communication strategy, visual brand, and UI flows culminating in a high fidelity app prototype and brand guide book</li>
                     </ul>
                     </div>
                 </div>
