@@ -55,7 +55,7 @@ body {
 /* make burger appear at lower screen sizes */
 @media only screen and (max-width: 768px) {
   .burger{
-    display:none;
+    display:flex;
   }
 }
   .RightNav{
@@ -139,6 +139,12 @@ body {
 .navigation a:hover {
   color: 236F71;
 }
+
+/* trying to make the below affect the ifram specifically but it's not working */
+.resume {
+  z-index: 1;
+  /* outline: none; */
+}
 .container {
 	background: #EBEDED;
   height: auto;
@@ -147,7 +153,6 @@ body {
 	align-items: center;
 	justify-content: center;
   position: relative;
-  /* z-index: -5;   */
 }
 
 .shape-blob {

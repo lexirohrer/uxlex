@@ -25,7 +25,7 @@ const RightNav = ({ open }) => {
         )
       }
 
-      return <div></div>
+      return <></>
     }
     
   
