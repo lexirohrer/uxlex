@@ -48,16 +48,7 @@ body {
   border-bottom: .5rem solid white;
   }
 
-.burger{
-  display:none;
-}
 
-/* make burger appear at lower screen sizes */
-@media only screen and (max-width: 768px) {
-  .burger{
-    display:flex;
-  }
-}
   .RightNav{
     flex-flow: column nowrap;
     background-color: #0D2538;
@@ -101,6 +92,7 @@ body {
   .nav-title{
     flex-direction: column;
     justify-content: flex-start;
+    align-items:flex-start;
   }
 }
 
@@ -109,7 +101,7 @@ body {
   font-size: 1.5em;
   color: #236F71;
   margin:0px;
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .subtitle {
@@ -118,9 +110,8 @@ body {
   font-size: 1rem;
   color: #828282;
   display: inline;
-  margin:0px;
-  padding: 10px;
-  /* position: relative; */
+  margin: 0px;
+  padding-left: 1rem;
 }
 .navigation{
   flex-direction: row;
@@ -140,7 +131,50 @@ body {
   color: 236F71;
 }
 
-/* trying to make the below affect the ifram specifically but it's not working */
+.burger{
+  display:none;
+  flex-direction: column;
+  text-align: right;
+  align-items: end;
+}
+
+.burger button{
+  border: none;
+  background: none;
+  position: absolute;
+  right: 1rem;
+}
+
+/* make burger appear at lower screen sizes */
+@media only screen and (max-width: 768px) {
+  .burger{
+    display:flex;
+  }
+
+  .navigation{
+    display:none;
+  }
+
+  .burger-nav{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #828282;
+  padding: 10px;
+  border-radius: 1rem 0px 0px 1rem;
+  text-decoration: none;
+  width: auto;
+  position: absolute;
+  background:rgba(255, 255, 255, 0.9);
+  flex-direction: column;
+  top: 5rem;
+  right: 0px;
+  z-index: 2;
+  display: flex;
+  }
+}
+
+/* trying to make the below affect the iframe specifically but it's not working */
 .resume {
   z-index: 1;
   /* outline: none; */

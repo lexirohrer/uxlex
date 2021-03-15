@@ -22,23 +22,14 @@ function App() {
           <p class="subtitle"> | product design portfolio</p> 
         </div>
         
-        <div className="navigation">
-          <div class="burger">
-            <Burger />
-          </div>
+        <div class="burger">
+          <Burger />
+        </div>
 
+        <div className="navigation">
           <Link to='/hello'>hello👋</Link>
           <Link to='/'>projects📱</Link>
           <Link to='/resume'>resume 🤓</Link>
-          {/* put each h2 within a Link after installing react router */}
-          {/* use a / in the projects one since it's a landing page */}
-        
-          {/* <div class="burger-menu">
-          <Burger onClick={(menuOpen)=> setMenuOpen(true)} />
-          <Link to='/hello'>hello👋</Link>
-          <Link to='/'>projects📱</Link>
-          <Link to='/resume'>resume 🤓</Link>
-          </div> */}
           
         </div>       
 

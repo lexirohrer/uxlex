@@ -1,19 +1,22 @@
 
 .hello{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    z-index: 1;
+    margin: 2rem;
+}
+
+.hello h1 {
+    color: #373737;
     z-index: 1;
 }
 
-/* .intro{
-    display: flex;
-    flex-direction: column;
-} */
-
-h1 {
-z-index: 1;
+.hello h2 {
+    color: #373737;
+    z-index: 1;
 }
 
-h2 {
-    z-index: 1;
-    }
+.about-me{
+    flex-direction: row;
+    justify-content: flex-start;
+}

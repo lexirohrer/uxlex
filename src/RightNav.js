@@ -12,14 +12,17 @@ const RightNav = ({ open }) => {
             
     if (open){
         return (
-            <div className="navigation">
-            <div class="burger">
+            <div className="burger">
+            {/* <div class="burger">
               <Burger />
+            </div> */}
+            <div className="burger-nav">
+                <Link to='/hello'>hello👋</Link>
+                <Link to='/'>projects📱</Link>
+                <Link to='/resume'>resume 🤓</Link>
+
             </div>
-    
-            <Link to='/hello'>hello👋</Link>
-            <Link to='/'>projects📱</Link>
-            <Link to='/resume'>resume 🤓</Link>
+            
             
           </div> 
         )

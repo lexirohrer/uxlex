@@ -69,8 +69,8 @@ const Burger = () => {
             {/* <i class="fas fa-check-circle" fa-lg></i> */}
             {/* Put UTF code for burger emoji here bc emoji may not show up in all browsers? */}
             </button>
-        <div open={open} >    
-        </div>
+        {/* <div open={open} >    
+        </div> */}
 
         <RightNav open={open}/>
       </>
